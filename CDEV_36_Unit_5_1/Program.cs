@@ -1,9 +1,9 @@
 ﻿using System;
-/*class Program
+class Program
 {
-    static string ShowColor()
+    static string ShowColor(string name, int age)
     {
-        Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
+        Console.WriteLine("{0} {1}\nНапишите свой любимый цвет на английском с маленькой буквы", name, age);
         var color = Console.ReadLine();
         switch (color)
         {
@@ -40,10 +40,23 @@
 
     public static void Main()
     {
+        var (name, age) = ("Евгения", 27);
+
+        Console.WriteLine("Моё имя: {0}", name);
+        Console.WriteLine("Мой возраст: {0}", age);
+
+        Console.Write("Введите имя:");
+        name = Console.ReadLine();
+        Console.Write("Введите возраст с цифрами:");
+        age = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Ваше имя: {0}", name);
+        Console.WriteLine("Ваш возраст: {0}", age);
+       
         var favcolors = new string[3];
         for (int i = 0; i < favcolors.Length; i++) 
         {
-            favcolors[i] = ShowColor();
+            favcolors[i] = ShowColor(name, age);
         }
 
         Console.WriteLine("Your favotite colors:");
@@ -55,12 +68,23 @@
         Console.ReadKey();
 
     }
+       
+}
 
     
-}
 
-*/
-class Program
-{
 
-}
+
+
+
+//CDEV_36_Unit5-1
+
+   /* class Program
+{   
+    static void Main(string[] args)
+    {
+        Console.WriteLine()
+    }
+    
+
+}*/
