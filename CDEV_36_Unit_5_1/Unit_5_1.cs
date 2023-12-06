@@ -70,21 +70,3 @@ class Unit_5_1
     }
        
 }
-
-    
-
-
-
-
-
-//CDEV_36_Unit5-1
-
-   /* class Program
-{   
-    static void Main(string[] args)
-    {
-        Console.WriteLine()
-    }
-    
-
-}*/
