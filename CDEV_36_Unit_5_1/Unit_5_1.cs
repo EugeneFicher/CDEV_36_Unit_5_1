@@ -1,5 +1,5 @@
 ﻿using System;
-class Program
+class Unit_5_1
 {
     static string ShowColor(string name, int age)
     {
